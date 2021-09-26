@@ -1,0 +1,13 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    
+    font-weight: 400;
+}
+.row{
+    --bs-gutter-x: .5rem;
+}
