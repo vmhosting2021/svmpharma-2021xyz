@@ -76,7 +76,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <form name="submit-to-google-sheet" >
+                            <form action="https://formsubmit.co/admin@svmpharma.in" method="POST" id="form" >
                                 
                                 <div class="form-group">
                                     <label for="NameSVM">Name : </label>
@@ -84,6 +84,7 @@
                                 </div>
                                 <div class="form-group mb-3">
                                     <label for="emailSVM">Email : </label>
+                                       <input type="hidden" name="_next" value="https://svmpharma.in/form.html">
                                     <input type="text" name= "Email" id="EmailSVM" class="form-control" placeholder="Kindly Type Your Email - address"> 
                                 </div>
                                 <div class="form-group mb-3">
@@ -95,6 +96,8 @@
                                     <textarea type="text" name= "Message" id="messageSVM" class="form-control" placeholder="Comments.." rows="3"> </textarea> 
                                 </div>
                                 <div class="container text-center">
+                                                                      <input type="hidden" name="_captcha" value="false">
+
                                     <button type="submit" class="btn btn-warning p-2 px-lg-5" name="submit">Submit</button>
                                 </div>
                             </form>
@@ -290,7 +293,7 @@
 
 
 
-        
+<!--         
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwtttGYBXuUr2cLwAfOkvJYytSKE7IGNYRC4whfdYlesx6HoYussVIwBQs4zoTS9Puk9w/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -301,7 +304,7 @@
             .then(response => $("#forms_alerts").html("<div class='alert alert-success'> Message sent Successfully ,Thanks For choosing SVM Pharma </div> "))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
